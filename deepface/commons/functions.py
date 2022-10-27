@@ -57,7 +57,7 @@ def initialize_folder():
 		print("Directory ", home, "/.deepface/weights created")
 
 def get_deepface_home():
-	return str(os.getenv('DEEPFACE_HOME', default=Path.home()))
+	return 'trained_models'
 
 def loadBase64Img(uri):
    encoded_data = uri.split(',')[1]
